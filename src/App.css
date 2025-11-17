@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.app {
+  max-width: 900px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0 0 6px 0;
+  font-size: 40px;
+}
+.subtitle {
+  margin: 0 0 18px 0;
+  color: #555;
+  font-size: 26px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(12, 20, 40, 0.04);
+}
+.card-title {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+.card-body {
+  padding-top: 6px;
+}
+
+/* User list */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.user-info .name {
+  font-size: 17px; 
+  font-weight: 600;
+}
+.user-info .age {
+  font-size: 26px;
+  color: #666;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+/* Selected user */
+.selected-empty {
+  color: #666;
+  font-size: 24px;
+}
+
+.selected-user {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.avatar-large {
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.selected-info h3 {
+  margin: 0 0 6px 0;
+}
+.selected-info p {
+  margin: 4px 0;
+  color: #444;
+  font-size: 28px;
+}
