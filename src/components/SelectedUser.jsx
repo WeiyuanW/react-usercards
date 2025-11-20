@@ -1,4 +1,4 @@
-// 展示选中用户的详细信息（展示 Props 也可作为独立组件）
+// Displays detailed information about the selected user. 
 function SelectedUser({ user }) {
   if (!user) {
     return <div className="selected-empty">No user selected yet. Click the Select button on the right to choose a user.</div>;

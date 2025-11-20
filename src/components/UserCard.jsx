@@ -1,4 +1,4 @@
-// 单个用户卡片：演示 props 的使用和按钮事件触发（子传父）
+// Single user card: the use of props and button event triggering (child-to-parent transmission).
 function UserCard({ user, onSelect }) {
   return (
     <div className="user-card">
@@ -8,7 +8,7 @@ function UserCard({ user, onSelect }) {
         <div className="age">Age: {user.age}</div>
       </div>
       <div className="actions">
-        {/* 当点击时，把 user 作为参数传回父组件 */}
+        {/* When clicked, the user is passed back to the parent component as a parameter. */}
         <button className="btn" onClick={() => onSelect(user)}>
           Select
         </button>

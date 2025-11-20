@@ -1,6 +1,6 @@
 import UserCard from './UserCard';
 
-// 列表组件：演示 map 渲染多个相同组件（组件复用）
+// List component: render multiple identical components using a map (component reuse).
 function UserList({ users, onSelectUser }) {
   return (
     <div className="user-list">
